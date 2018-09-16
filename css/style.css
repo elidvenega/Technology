@@ -1,0 +1,180 @@
+:root {
+  --zero: 0;
+}
+
+* {
+  margin: var(--zero);
+  padding: var(--zero);
+}
+
+/* Add a dark background color with a little bit see-through */
+
+.navbar {
+  margin-bottom: var(--zero);
+  background-color: black;
+  border: var(--zero);
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity: 0.8;
+}
+
+/* Add a gray color to all navbar links */
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+/* On hover, the links will turn white */
+
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+/* The active link */
+
+.navbar-nav li.active a {
+  color: black !important;
+  background-color: black !important;
+}
+
+/* Remove border color from the collapsible button */
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+/* Dropdown */
+
+.open .dropdown-toggle {
+  color: #fff;
+  background-color: black !important;
+}
+
+/* Dropdown links */
+
+.dropdown-menu li a {
+  color: #000 !important;
+}
+
+.image {
+  background-image: url("../img/tech.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  line-height: 1.2;
+}
+
+.landing {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.landing h1 {
+  font-size: 50px;
+  color: #fff;
+  margin-top: 220px;
+}
+
+.countdown {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.countdown div {
+  padding: 20px;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  background: #000;
+  opacity: 0.7;
+  margin: 5px;
+}
+
+.countdown div:first-child {
+  background: #17a2b8;
+}
+
+.countdown span {
+  display: block;
+  font-size: 25px;
+}
+
+@media (max-width: 650px) {
+  .landing img {
+    width: 70%;
+  }
+  .landing h1 {
+    font-size: 40px;
+  }
+  .countdown {
+    font-size: 30px;
+    flex-direction: column;
+  }
+  .countdown div {
+    display: none;
+  }
+  .countdown div:first-child {
+    display: block;
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+.cont {
+  --box-bg-color: black;
+  --box-main-color: #2c3e50;
+  --box-padding: 5px 10px;
+  --box-shadow-h-offset: 10px;
+  --box-shadow-v-offset: 10px;
+  --box-shadow-blur: 5px;
+  --box-margin: 60px;
+}
+
+.cont {
+  max-width: 760px;
+  margin: auto;
+  background-color: var(--box-bg-color);
+  padding: var(--box-padding);
+  border: 1px solid var(--box-main-color);
+  box-shadow: var(--box-shadow-h-offset) var(--box-shadow-v-offset) var(--box-shadow-blur) var(--box-main-color);
+  margin-top: var(--box-margin);
+  margin-bottom: var(--box-margin);
+}
+
+.main-img img, .imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: var(--zero);
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+}
